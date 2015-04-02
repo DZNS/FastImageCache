@@ -27,6 +27,9 @@
 		EBB922BD17DA8E6A00211050 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB922BC17DA8E6A00211050 /* QuartzCore.framework */; };
 		EBB922BF17DC08E900211050 /* Demo Images in Resources */ = {isa = PBXBuildFile; fileRef = EBB922BE17DC08E900211050 /* Demo Images */; };
 		EBC8A5F217FF6DEF007FECD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC8A5F117FF6DEF007FECD4 /* Assets.xcassets */; };
+		F082632F1ACDC80D001B62F3 /* DZFICNetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = F082632E1ACDC80D001B62F3 /* DZFICNetworkController.m */; };
+		F08263331ACDCB81001B62F3 /* DZCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = F08263321ACDCB81001B62F3 /* DZCategories.m */; };
+		F08263361ACDCC8E001B62F3 /* DZFICOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F08263351ACDCC8E001B62F3 /* DZFICOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +71,12 @@
 		EBC8A5F117FF6DEF007FECD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBC8A63718036430007FECD4 /* FICEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FICEntity.h; sourceTree = "<group>"; };
 		EBC8A6381804B63A007FECD4 /* FICImageCache+FICErrorLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FICImageCache+FICErrorLogging.h"; sourceTree = "<group>"; };
+		F082632D1ACDC80D001B62F3 /* DZFICNetworkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DZFICNetworkController.h; path = ../DZClasses/DZFICNetworkController.h; sourceTree = "<group>"; };
+		F082632E1ACDC80D001B62F3 /* DZFICNetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DZFICNetworkController.m; path = ../DZClasses/DZFICNetworkController.m; sourceTree = "<group>"; };
+		F08263311ACDCB81001B62F3 /* DZCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DZCategories.h; path = ../DZClasses/DZCategories.h; sourceTree = "<group>"; };
+		F08263321ACDCB81001B62F3 /* DZCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DZCategories.m; path = ../DZClasses/DZCategories.m; sourceTree = "<group>"; };
+		F08263341ACDCC8E001B62F3 /* DZFICOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DZFICOperation.h; path = ../DZClasses/DZFICOperation.h; sourceTree = "<group>"; };
+		F08263351ACDCC8E001B62F3 /* DZFICOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DZFICOperation.m; path = ../DZClasses/DZFICOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +98,7 @@
 		2E095B0717AEBB1200ECE160 = {
 			isa = PBXGroup;
 			children = (
+				F08263301ACDC810001B62F3 /* DZClasses */,
 				2E1BC8E017C57C4700836A7E /* FastImageCache */,
 				2EA7993A17B2A0CF00684B86 /* Demo App */,
 				2E095B1217AEBB1200ECE160 /* Frameworks */,
@@ -179,6 +189,19 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		F08263301ACDC810001B62F3 /* DZClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F082632D1ACDC80D001B62F3 /* DZFICNetworkController.h */,
+				F082632E1ACDC80D001B62F3 /* DZFICNetworkController.m */,
+				F08263341ACDCC8E001B62F3 /* DZFICOperation.h */,
+				F08263351ACDCC8E001B62F3 /* DZFICOperation.m */,
+				F08263311ACDCB81001B62F3 /* DZCategories.h */,
+				F08263321ACDCB81001B62F3 /* DZCategories.m */,
+			);
+			name = DZClasses;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,8 +275,11 @@
 				2E1BC8F317C57C4700836A7E /* FICImageTableChunk.m in Sources */,
 				2E1BC8F417C57C4700836A7E /* FICImageTableEntry.m in Sources */,
 				2E64541017FF24C0001D0531 /* FICDTableView.m in Sources */,
+				F08263331ACDCB81001B62F3 /* DZCategories.m in Sources */,
 				2E1BC8FE17C57CDF00836A7E /* FICDAppDelegate.m in Sources */,
 				2E1BC8FF17C57CDF00836A7E /* FICDPhoto.m in Sources */,
+				F08263361ACDCC8E001B62F3 /* DZFICOperation.m in Sources */,
+				F082632F1ACDC80D001B62F3 /* DZFICNetworkController.m in Sources */,
 				2E1BC90017C57CDF00836A7E /* FICDPhotosTableViewCell.m in Sources */,
 				2E1BC90117C57CDF00836A7E /* FICDViewController.m in Sources */,
 			);
@@ -332,7 +358,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Supporting Files/FastImageCacheDemo-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/FastImageCacheDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = FastImageCacheDemo;
 				WRAPPER_EXTENSION = app;
 			};
@@ -347,7 +373,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Supporting Files/FastImageCacheDemo-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/FastImageCacheDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = FastImageCacheDemo;
 				WRAPPER_EXTENSION = app;
 			};
