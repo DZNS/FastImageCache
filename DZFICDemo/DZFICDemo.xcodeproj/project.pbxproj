@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F01CBFE61ACE79DC00517860 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CBFE51ACE79DC00517860 /* main.m */; };
+		F01CBFE91ACE79DC00517860 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CBFE81ACE79DC00517860 /* AppDelegate.m */; };
+		F01CBFF11ACE79DC00517860 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01CBFF01ACE79DC00517860 /* Images.xcassets */; };
+		F01CBFF41ACE79DC00517860 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F01CBFF21ACE79DC00517860 /* LaunchScreen.xib */; };
+		F01CC0001ACE79DC00517860 /* DZFICDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CBFFF1ACE79DC00517860 /* DZFICDemoTests.m */; };
+		F01CC0201ACE7A2300517860 /* DZCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CC00B1ACE7A2300517860 /* DZCategories.m */; };
+		F01CC0211ACE7A2300517860 /* DZFICNetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CC00D1ACE7A2300517860 /* DZFICNetworkController.m */; };
+		F01CC0221ACE7A2300517860 /* DZFICOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CC00F1ACE7A2300517860 /* DZFICOperation.m */; };
+		F01CC0231ACE7A2300517860 /* FICImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CC0141ACE7A2300517860 /* FICImageCache.m */; };
+		F01CC0241ACE7A2300517860 /* FICImageFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CC0161ACE7A2300517860 /* FICImageFormat.m */; };
+		F01CC0251ACE7A2300517860 /* FICImageTable.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CC0181ACE7A2300517860 /* FICImageTable.m */; };
+		F01CC0261ACE7A2300517860 /* FICImageTableChunk.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CC01A1ACE7A2300517860 /* FICImageTableChunk.m */; };
+		F01CC0271ACE7A2300517860 /* FICImageTableEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CC01C1ACE7A2300517860 /* FICImageTableEntry.m */; };
+		F01CC0281ACE7A2300517860 /* FICUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CC01F1ACE7A2300517860 /* FICUtilities.m */; };
+		F01CC02B1ACE7A5A00517860 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CC02A1ACE7A5A00517860 /* ViewController.m */; };
+		F01CC02E1ACE7DF500517860 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CC02D1ACE7DF500517860 /* Photo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F01CBFFA1ACE79DC00517860 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F01CBFD81ACE79DC00517860 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F01CBFDF1ACE79DC00517860;
+			remoteInfo = DZFICDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F01CBFE01ACE79DC00517860 /* DZFICDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DZFICDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F01CBFE41ACE79DC00517860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F01CBFE51ACE79DC00517860 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F01CBFE71ACE79DC00517860 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F01CBFE81ACE79DC00517860 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F01CBFF01ACE79DC00517860 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F01CBFF31ACE79DC00517860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F01CBFF91ACE79DC00517860 /* DZFICDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DZFICDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F01CBFFE1ACE79DC00517860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F01CBFFF1ACE79DC00517860 /* DZFICDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DZFICDemoTests.m; sourceTree = "<group>"; };
+		F01CC00A1ACE7A2300517860 /* DZCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCategories.h; sourceTree = "<group>"; };
+		F01CC00B1ACE7A2300517860 /* DZCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCategories.m; sourceTree = "<group>"; };
+		F01CC00C1ACE7A2300517860 /* DZFICNetworkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZFICNetworkController.h; sourceTree = "<group>"; };
+		F01CC00D1ACE7A2300517860 /* DZFICNetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZFICNetworkController.m; sourceTree = "<group>"; };
+		F01CC00E1ACE7A2300517860 /* DZFICOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZFICOperation.h; sourceTree = "<group>"; };
+		F01CC00F1ACE7A2300517860 /* DZFICOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZFICOperation.m; sourceTree = "<group>"; };
+		F01CC0111ACE7A2300517860 /* FICEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FICEntity.h; sourceTree = "<group>"; };
+		F01CC0121ACE7A2300517860 /* FICImageCache+FICErrorLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FICImageCache+FICErrorLogging.h"; sourceTree = "<group>"; };
+		F01CC0131ACE7A2300517860 /* FICImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FICImageCache.h; sourceTree = "<group>"; };
+		F01CC0141ACE7A2300517860 /* FICImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FICImageCache.m; sourceTree = "<group>"; };
+		F01CC0151ACE7A2300517860 /* FICImageFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FICImageFormat.h; sourceTree = "<group>"; };
+		F01CC0161ACE7A2300517860 /* FICImageFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FICImageFormat.m; sourceTree = "<group>"; };
+		F01CC0171ACE7A2300517860 /* FICImageTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FICImageTable.h; sourceTree = "<group>"; };
+		F01CC0181ACE7A2300517860 /* FICImageTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FICImageTable.m; sourceTree = "<group>"; };
+		F01CC0191ACE7A2300517860 /* FICImageTableChunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FICImageTableChunk.h; sourceTree = "<group>"; };
+		F01CC01A1ACE7A2300517860 /* FICImageTableChunk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FICImageTableChunk.m; sourceTree = "<group>"; };
+		F01CC01B1ACE7A2300517860 /* FICImageTableEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FICImageTableEntry.h; sourceTree = "<group>"; };
+		F01CC01C1ACE7A2300517860 /* FICImageTableEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FICImageTableEntry.m; sourceTree = "<group>"; };
+		F01CC01D1ACE7A2300517860 /* FICImports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FICImports.h; sourceTree = "<group>"; };
+		F01CC01E1ACE7A2300517860 /* FICUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FICUtilities.h; sourceTree = "<group>"; };
+		F01CC01F1ACE7A2300517860 /* FICUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FICUtilities.m; sourceTree = "<group>"; };
+		F01CC0291ACE7A5A00517860 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F01CC02A1ACE7A5A00517860 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F01CC02C1ACE7DF500517860 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		F01CC02D1ACE7DF500517860 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F01CBFDD1ACE79DC00517860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F01CBFF61ACE79DC00517860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F01CBFD71ACE79DC00517860 = {
+			isa = PBXGroup;
+			children = (
+				F01CBFE21ACE79DC00517860 /* DZFICDemo */,
+				F01CBFFC1ACE79DC00517860 /* DZFICDemoTests */,
+				F01CBFE11ACE79DC00517860 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F01CBFE11ACE79DC00517860 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F01CBFE01ACE79DC00517860 /* DZFICDemo.app */,
+				F01CBFF91ACE79DC00517860 /* DZFICDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F01CBFE21ACE79DC00517860 /* DZFICDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F01CC0091ACE7A2300517860 /* DZClasses */,
+				F01CC0101ACE7A2300517860 /* FastImageCache */,
+				F01CBFE71ACE79DC00517860 /* AppDelegate.h */,
+				F01CBFE81ACE79DC00517860 /* AppDelegate.m */,
+				F01CBFF01ACE79DC00517860 /* Images.xcassets */,
+				F01CBFF21ACE79DC00517860 /* LaunchScreen.xib */,
+				F01CBFE31ACE79DC00517860 /* Supporting Files */,
+				F01CC0291ACE7A5A00517860 /* ViewController.h */,
+				F01CC02A1ACE7A5A00517860 /* ViewController.m */,
+				F01CC02C1ACE7DF500517860 /* Photo.h */,
+				F01CC02D1ACE7DF500517860 /* Photo.m */,
+			);
+			path = DZFICDemo;
+			sourceTree = "<group>";
+		};
+		F01CBFE31ACE79DC00517860 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F01CBFE41ACE79DC00517860 /* Info.plist */,
+				F01CBFE51ACE79DC00517860 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F01CBFFC1ACE79DC00517860 /* DZFICDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F01CBFFF1ACE79DC00517860 /* DZFICDemoTests.m */,
+				F01CBFFD1ACE79DC00517860 /* Supporting Files */,
+			);
+			path = DZFICDemoTests;
+			sourceTree = "<group>";
+		};
+		F01CBFFD1ACE79DC00517860 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F01CBFFE1ACE79DC00517860 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F01CC0091ACE7A2300517860 /* DZClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F01CC00A1ACE7A2300517860 /* DZCategories.h */,
+				F01CC00B1ACE7A2300517860 /* DZCategories.m */,
+				F01CC00C1ACE7A2300517860 /* DZFICNetworkController.h */,
+				F01CC00D1ACE7A2300517860 /* DZFICNetworkController.m */,
+				F01CC00E1ACE7A2300517860 /* DZFICOperation.h */,
+				F01CC00F1ACE7A2300517860 /* DZFICOperation.m */,
+			);
+			name = DZClasses;
+			path = ../../DZClasses;
+			sourceTree = "<group>";
+		};
+		F01CC0101ACE7A2300517860 /* FastImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				F01CC0111ACE7A2300517860 /* FICEntity.h */,
+				F01CC0121ACE7A2300517860 /* FICImageCache+FICErrorLogging.h */,
+				F01CC0131ACE7A2300517860 /* FICImageCache.h */,
+				F01CC0141ACE7A2300517860 /* FICImageCache.m */,
+				F01CC0151ACE7A2300517860 /* FICImageFormat.h */,
+				F01CC0161ACE7A2300517860 /* FICImageFormat.m */,
+				F01CC0171ACE7A2300517860 /* FICImageTable.h */,
+				F01CC0181ACE7A2300517860 /* FICImageTable.m */,
+				F01CC0191ACE7A2300517860 /* FICImageTableChunk.h */,
+				F01CC01A1ACE7A2300517860 /* FICImageTableChunk.m */,
+				F01CC01B1ACE7A2300517860 /* FICImageTableEntry.h */,
+				F01CC01C1ACE7A2300517860 /* FICImageTableEntry.m */,
+				F01CC01D1ACE7A2300517860 /* FICImports.h */,
+				F01CC01E1ACE7A2300517860 /* FICUtilities.h */,
+				F01CC01F1ACE7A2300517860 /* FICUtilities.m */,
+			);
+			name = FastImageCache;
+			path = ../../FastImageCache;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F01CBFDF1ACE79DC00517860 /* DZFICDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F01CC0031ACE79DC00517860 /* Build configuration list for PBXNativeTarget "DZFICDemo" */;
+			buildPhases = (
+				F01CBFDC1ACE79DC00517860 /* Sources */,
+				F01CBFDD1ACE79DC00517860 /* Frameworks */,
+				F01CBFDE1ACE79DC00517860 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DZFICDemo;
+			productName = DZFICDemo;
+			productReference = F01CBFE01ACE79DC00517860 /* DZFICDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F01CBFF81ACE79DC00517860 /* DZFICDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F01CC0061ACE79DC00517860 /* Build configuration list for PBXNativeTarget "DZFICDemoTests" */;
+			buildPhases = (
+				F01CBFF51ACE79DC00517860 /* Sources */,
+				F01CBFF61ACE79DC00517860 /* Frameworks */,
+				F01CBFF71ACE79DC00517860 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F01CBFFB1ACE79DC00517860 /* PBXTargetDependency */,
+			);
+			name = DZFICDemoTests;
+			productName = DZFICDemoTests;
+			productReference = F01CBFF91ACE79DC00517860 /* DZFICDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F01CBFD81ACE79DC00517860 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Dezine Zync Studios LLP.";
+				TargetAttributes = {
+					F01CBFDF1ACE79DC00517860 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					F01CBFF81ACE79DC00517860 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = F01CBFDF1ACE79DC00517860;
+					};
+				};
+			};
+			buildConfigurationList = F01CBFDB1ACE79DC00517860 /* Build configuration list for PBXProject "DZFICDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F01CBFD71ACE79DC00517860;
+			productRefGroup = F01CBFE11ACE79DC00517860 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F01CBFDF1ACE79DC00517860 /* DZFICDemo */,
+				F01CBFF81ACE79DC00517860 /* DZFICDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F01CBFDE1ACE79DC00517860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F01CBFF41ACE79DC00517860 /* LaunchScreen.xib in Resources */,
+				F01CBFF11ACE79DC00517860 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F01CBFF71ACE79DC00517860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F01CBFDC1ACE79DC00517860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F01CC0231ACE7A2300517860 /* FICImageCache.m in Sources */,
+				F01CC0241ACE7A2300517860 /* FICImageFormat.m in Sources */,
+				F01CC0281ACE7A2300517860 /* FICUtilities.m in Sources */,
+				F01CC0271ACE7A2300517860 /* FICImageTableEntry.m in Sources */,
+				F01CC02E1ACE7DF500517860 /* Photo.m in Sources */,
+				F01CC0251ACE7A2300517860 /* FICImageTable.m in Sources */,
+				F01CC0201ACE7A2300517860 /* DZCategories.m in Sources */,
+				F01CC02B1ACE7A5A00517860 /* ViewController.m in Sources */,
+				F01CBFE91ACE79DC00517860 /* AppDelegate.m in Sources */,
+				F01CC0211ACE7A2300517860 /* DZFICNetworkController.m in Sources */,
+				F01CC0261ACE7A2300517860 /* FICImageTableChunk.m in Sources */,
+				F01CC0221ACE7A2300517860 /* DZFICOperation.m in Sources */,
+				F01CBFE61ACE79DC00517860 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F01CBFF51ACE79DC00517860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F01CC0001ACE79DC00517860 /* DZFICDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F01CBFFB1ACE79DC00517860 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F01CBFDF1ACE79DC00517860 /* DZFICDemo */;
+			targetProxy = F01CBFFA1ACE79DC00517860 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F01CBFF21ACE79DC00517860 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F01CBFF31ACE79DC00517860 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F01CC0011ACE79DC00517860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F01CC0021ACE79DC00517860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F01CC0041ACE79DC00517860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DZFICDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F01CC0051ACE79DC00517860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DZFICDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F01CC0071ACE79DC00517860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DZFICDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DZFICDemo.app/DZFICDemo";
+			};
+			name = Debug;
+		};
+		F01CC0081ACE79DC00517860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DZFICDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DZFICDemo.app/DZFICDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F01CBFDB1ACE79DC00517860 /* Build configuration list for PBXProject "DZFICDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F01CC0011ACE79DC00517860 /* Debug */,
+				F01CC0021ACE79DC00517860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F01CC0031ACE79DC00517860 /* Build configuration list for PBXNativeTarget "DZFICDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F01CC0041ACE79DC00517860 /* Debug */,
+				F01CC0051ACE79DC00517860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F01CC0061ACE79DC00517860 /* Build configuration list for PBXNativeTarget "DZFICDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F01CC0071ACE79DC00517860 /* Debug */,
+				F01CC0081ACE79DC00517860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F01CBFD81ACE79DC00517860 /* Project object */;
+}

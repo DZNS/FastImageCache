@@ -6,8 +6,6 @@
 //  Copyright (c) 2015 Dezine Zync Studios LLP. All rights reserved.
 //
 
-#warning CURRENTLY UNTESTED. DON'T USE.
-
 #import <Foundation/Foundation.h>
 #import "FICImageCache.h"
 

@@ -86,7 +86,7 @@
     op.sourceBlock = ^(UIImage *image) {
         
         if(!image) return;
-        
+        NSLog(@"%@", NSStringFromCGSize(image.size));
         asyncMain(^{
             
             completionBlock(image);
@@ -114,6 +114,8 @@
            && [[operation format] isEqualToString:formatName])
         {
             
+            NSLog(@"%@", entity);
+            
             // If the operation is Executing or not finished (possibly not started yet)
             if(![operation isFinished])
             {
@@ -126,6 +128,14 @@
         
     }
     
+}
+
+- (BOOL)imageCache:(FICImageCache *)imageCache shouldProcessAllFormatsInFamily:(NSString *)formatFamily forEntity:(id<FICEntity>)entity {
+    return NO;
+}
+
+- (void)imageCache:(FICImageCache *)imageCache errorDidOccurWithMessage:(NSString *)errorMessage {
+    NSLog(@"%@", errorMessage);
 }
 
 @end

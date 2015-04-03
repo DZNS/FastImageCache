@@ -42,11 +42,18 @@
             return;
         }
         
-        if(self.isCancelled) return;
-       
-        UIImage *image = [UIImage imageWithContentsOfFile:[location path]];
+        NSString *tempPath = [[@"~/tmp" stringByExpandingTildeInPath] stringByAppendingPathComponent:[self.sourceURL lastPathComponent]];
         
-        if(self.sourceBlock) self.sourceBlock(image);
+        if(self.isCancelled) return;
+        
+        if([[NSFileManager defaultManager] fileExistsAtPath:tempPath] || [[NSFileManager defaultManager] moveItemAtPath:[location path] toPath:tempPath error:nil])
+        {
+            
+            UIImage *image = [[UIImage alloc] initWithContentsOfFile:tempPath];
+            
+            if(self.sourceBlock) self.sourceBlock(image);
+            
+        }
         
     }];
     
