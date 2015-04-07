@@ -87,6 +87,8 @@
         
         if(!image) return;
         
+        if(!completionBlock) return;
+        
         asyncMain(^{
             
             completionBlock(image);
@@ -114,7 +116,7 @@
            && [[operation format] isEqualToString:formatName])
         {
             
-            NSLog(@"(Line: %@) %@-%@ : Canceled request for entity: %@", @(__LINE__), NSStringFromClass([self class]), NSStringFromSelector(_cmd), entity);
+            //NSLog(@"(Line: %@) %@-%@ : Canceled request for entity: %@", @(__LINE__), NSStringFromClass([self class]), NSStringFromSelector(_cmd), entity);
             
             // If the operation is Executing or not finished (possibly not started yet)
             if(![operation isFinished])
