@@ -86,7 +86,7 @@
     op.sourceBlock = ^(UIImage *image) {
         
         if(!image) return;
-        NSLog(@"%@", NSStringFromCGSize(image.size));
+        
         asyncMain(^{
             
             completionBlock(image);
@@ -114,7 +114,7 @@
            && [[operation format] isEqualToString:formatName])
         {
             
-            NSLog(@"%@", entity);
+            NSLog(@"(Line: %@) %@-%@ : Canceled request for entity: %@", @(__LINE__), NSStringFromClass([self class]), NSStringFromSelector(_cmd), entity);
             
             // If the operation is Executing or not finished (possibly not started yet)
             if(![operation isFinished])
