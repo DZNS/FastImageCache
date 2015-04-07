@@ -32,6 +32,19 @@
     // as no one is there to receive the image.
     if(!self.sourceURL || !self.sourceBlock) return;
     
+    NSString *tempPath = [[@"~/tmp" stringByExpandingTildeInPath] stringByAppendingPathComponent:[self.sourceURL lastPathComponent]];
+    
+    if([[NSFileManager defaultManager] fileExistsAtPath:tempPath])
+    {
+        
+        UIImage *image = [[UIImage alloc] initWithContentsOfFile:tempPath];
+        
+        if(self.sourceBlock) self.sourceBlock(image);
+        
+        return;
+        
+    }
+    
     self.task = [[NSURLSession sharedSession] downloadTaskWithURL:self.sourceURL completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
         
         if(self.isCancelled) return;
@@ -41,8 +54,6 @@
             NSLog(@"%@ (%@ @ %@) : %@", NSStringFromClass([self class]), @(__LINE__), NSStringFromSelector(_cmd), [error localizedDescription]);
             return;
         }
-        
-        NSString *tempPath = [[@"~/tmp" stringByExpandingTildeInPath] stringByAppendingPathComponent:[self.sourceURL lastPathComponent]];
         
         if(self.isCancelled) return;
         
