@@ -15,5 +15,6 @@
 @property (nonatomic, copy) NSURL *sourceURL;
 @property (nonatomic, copy) NSString *format;
 @property (nonatomic, copy) void(^sourceBlock)(UIImage *image);
+@property (nonatomic, assign) BOOL followRedirects;
 
 @end

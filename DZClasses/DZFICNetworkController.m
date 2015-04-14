@@ -11,10 +11,16 @@
 
 #import "DZCategories.h"
 
+@implementation DZFICConfiguration
+
+@end
+
 @interface DZFICNetworkController()
 
 @property (nonatomic, strong) NSOperationQueue *queue;
 @property (nonatomic, copy) instructionBlock instructionBlock;
+@property (nonatomic, strong) NSURLSession *urlSession;
+@property (nonatomic, assign, getter=shouldFollowRedirects) BOOL followRedirects;
 
 @end
 
@@ -38,6 +44,8 @@
             
         }
         
+        self.followRedirects = configuration ? configuration.shouldFollowRedirects : YES;
+   
     }
     
     return self;
@@ -83,6 +91,7 @@
     op.sourceURL = URL;
     op.UUID = [entity UUID];
     op.format = formatName;
+    op.followRedirects = [self shouldFollowRedirects];
     op.sourceBlock = ^(UIImage *image) {
         
         if(!image) return;

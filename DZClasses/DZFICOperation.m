@@ -57,6 +57,24 @@
         
         if(self.isCancelled) return;
         
+        if(!self.followRedirects)
+        {
+            
+            //Ensure that the sourceURL is the same as the request's URL.
+            if(![[self.sourceURL absoluteString] isEqualToString:[response.URL absoluteString]])
+            {
+                
+                if(self.sourceBlock)
+                {
+                    self.sourceBlock(nil);
+                }
+                
+                return;
+                
+            }
+            
+        }
+        
         if([[NSFileManager defaultManager] fileExistsAtPath:tempPath] || [[NSFileManager defaultManager] moveItemAtPath:[location path] toPath:tempPath error:nil])
         {
             

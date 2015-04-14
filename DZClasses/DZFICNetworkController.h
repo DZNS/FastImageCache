@@ -16,6 +16,7 @@ typedef NSString *(^instructionBlock)(id<FICEntity>);
 @property (nonatomic, assign) NSInteger maxConcurrentConnections; // Default: 20.
 @property (nonatomic, assign) BOOL shouldContinueInBackground; // Default: NO
 @property (nonatomic, copy) instructionBlock instructionBlock; // Not currently used. Ignore.
+@property (nonatomic, assign) BOOL shouldFollowRedirects;
 
 @end
 
