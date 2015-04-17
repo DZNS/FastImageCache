@@ -19,7 +19,6 @@
 
 @property (nonatomic, strong) NSOperationQueue *queue;
 @property (nonatomic, copy) instructionBlock instructionBlock;
-@property (nonatomic, strong) NSURLSession *urlSession;
 @property (nonatomic, assign, getter=shouldFollowRedirects) BOOL followRedirects;
 
 @end
