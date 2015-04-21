@@ -61,7 +61,7 @@
         {
             
             //Ensure that the sourceURL is the same as the request's URL.
-            if(![[self.sourceURL absoluteString] isEqualToString:[response.URL absoluteString]])
+            if(![[[self.task.originalRequest URL] absoluteString] isEqualToString:[[self.task.currentRequest URL] absoluteString]])
             {
                 
                 if(self.sourceBlock)
@@ -86,7 +86,11 @@
         
     }];
     
-    [self.task resume];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+       
+        [self.task resume];
+        
+    });
     
 }
 
