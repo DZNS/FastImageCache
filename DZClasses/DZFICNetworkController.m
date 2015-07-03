@@ -25,6 +25,15 @@
 
 @implementation DZFICNetworkController
 
+- (instancetype)init
+{
+    
+    self = [self init];
+    
+    return self;
+    
+}
+
 - (instancetype)initWithConfiguration:(DZFICConfiguration *)configuration
 {
     
