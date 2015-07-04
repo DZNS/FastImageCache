@@ -17,9 +17,7 @@
 
 @interface DZFICNetworkController()
 
-@property (nonatomic, strong) NSOperationQueue *queue;
 @property (nonatomic, copy) instructionBlock instructionBlock;
-@property (nonatomic, assign, getter=shouldFollowRedirects) BOOL followRedirects;
 
 @end
 

@@ -24,7 +24,13 @@ typedef NSString *(^instructionBlock)(id<FICEntity>);
  DZFICNetworkController is a drop-in Networking Controller that assists with downloading images over the network to be used in tandem with FICImageCache. You don't have to use this class to be able to use FICImageCache. It merely simplifies things if you are required to download images over the network. It is to be assigned as the delegate to the FICImageCache instance.
  */
 
-@interface DZFICNetworkController : NSObject <FICImageCacheDelegate>
+@interface DZFICNetworkController : NSObject <FICImageCacheDelegate> {
+    NSOperationQueue *_queue;
+    BOOL _followRedirects;
+}
+
+@property (nonatomic, strong) NSOperationQueue *queue;
+@property (nonatomic, assign, getter=shouldFollowRedirects) BOOL followRedirects;
 
 /**
  *  Creates an instance of the Networking Controller. Once created, assign it to FICImageCache's delegate. You must store this in a strongly typed property.
