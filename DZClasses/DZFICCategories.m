@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Path. All rights reserved.
 //
 
-#import "DZCategories.h"
+#import "DZFICCategories.h"
 
-@implementation NSString (DZCategories)
+@implementation NSString (DZFICCategories)
 
 -(BOOL)isBlank
 {

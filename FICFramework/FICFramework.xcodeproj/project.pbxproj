@@ -10,8 +10,8 @@
 		F0634F551B6B4B760025C347 /* FICFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = F0634F541B6B4B760025C347 /* FICFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0634F5B1B6B4B760025C347 /* FICFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0634F4F1B6B4B760025C347 /* FICFramework.framework */; };
 		F0634F621B6B4B760025C347 /* FICFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0634F611B6B4B760025C347 /* FICFrameworkTests.m */; };
-		F0634F821B6B4B810025C347 /* DZCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = F0634F6C1B6B4B810025C347 /* DZCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F0634F831B6B4B810025C347 /* DZCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = F0634F6D1B6B4B810025C347 /* DZCategories.m */; };
+		F0634F821B6B4B810025C347 /* DZFICCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = F0634F6C1B6B4B810025C347 /* DZFICCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0634F831B6B4B810025C347 /* DZFICCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = F0634F6D1B6B4B810025C347 /* DZFICCategories.m */; };
 		F0634F841B6B4B810025C347 /* DZFICNetworkController.h in Headers */ = {isa = PBXBuildFile; fileRef = F0634F6E1B6B4B810025C347 /* DZFICNetworkController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0634F851B6B4B810025C347 /* DZFICNetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0634F6F1B6B4B810025C347 /* DZFICNetworkController.m */; };
 		F0634F861B6B4B810025C347 /* DZFICOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F0634F701B6B4B810025C347 /* DZFICOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -50,8 +50,8 @@
 		F0634F5A1B6B4B760025C347 /* FICFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FICFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0634F601B6B4B760025C347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0634F611B6B4B760025C347 /* FICFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FICFrameworkTests.m; sourceTree = "<group>"; };
-		F0634F6C1B6B4B810025C347 /* DZCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCategories.h; sourceTree = "<group>"; };
-		F0634F6D1B6B4B810025C347 /* DZCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCategories.m; sourceTree = "<group>"; };
+		F0634F6C1B6B4B810025C347 /* DZFICCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZFICCategories.h; sourceTree = "<group>"; };
+		F0634F6D1B6B4B810025C347 /* DZFICCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZFICCategories.m; sourceTree = "<group>"; };
 		F0634F6E1B6B4B810025C347 /* DZFICNetworkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZFICNetworkController.h; sourceTree = "<group>"; };
 		F0634F6F1B6B4B810025C347 /* DZFICNetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZFICNetworkController.m; sourceTree = "<group>"; };
 		F0634F701B6B4B810025C347 /* DZFICOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZFICOperation.h; sourceTree = "<group>"; };
@@ -149,8 +149,8 @@
 		F0634F6B1B6B4B810025C347 /* DZClasses */ = {
 			isa = PBXGroup;
 			children = (
-				F0634F6C1B6B4B810025C347 /* DZCategories.h */,
-				F0634F6D1B6B4B810025C347 /* DZCategories.m */,
+				F0634F6C1B6B4B810025C347 /* DZFICCategories.h */,
+				F0634F6D1B6B4B810025C347 /* DZFICCategories.m */,
 				F0634F6E1B6B4B810025C347 /* DZFICNetworkController.h */,
 				F0634F6F1B6B4B810025C347 /* DZFICNetworkController.m */,
 				F0634F701B6B4B810025C347 /* DZFICOperation.h */,
@@ -190,7 +190,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0634F821B6B4B810025C347 /* DZCategories.h in Headers */,
+				F0634F821B6B4B810025C347 /* DZFICCategories.h in Headers */,
 				F0634F841B6B4B810025C347 /* DZFICNetworkController.h in Headers */,
 				F0634F941B6B4B810025C347 /* FICImports.h in Headers */,
 				F0634F901B6B4B810025C347 /* FICImageTableChunk.h in Headers */,
@@ -303,7 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0634F911B6B4B810025C347 /* FICImageTableChunk.m in Sources */,
-				F0634F831B6B4B810025C347 /* DZCategories.m in Sources */,
+				F0634F831B6B4B810025C347 /* DZFICCategories.m in Sources */,
 				F0634F8D1B6B4B810025C347 /* FICImageFormat.m in Sources */,
 				F0634F961B6B4B810025C347 /* FICUtilities.m in Sources */,
 				F0634F871B6B4B810025C347 /* DZFICOperation.m in Sources */,
@@ -500,6 +500,7 @@
 				F0634F671B6B4B760025C347 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0634F681B6B4B760025C347 /* Build configuration list for PBXNativeTarget "FICFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +509,7 @@
 				F0634F6A1B6B4B760025C347 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

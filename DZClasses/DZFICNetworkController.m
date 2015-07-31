@@ -9,7 +9,7 @@
 #import "DZFICNetworkController.h"
 #import "DZFICOperation.h"
 
-#import "DZCategories.h"
+#import "DZFICCategories.h"
 
 @implementation DZFICConfiguration
 

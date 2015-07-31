@@ -1,5 +1,5 @@
 //
-//  DZCategories.h
+//  DZFICCategories.h
 //  FastImageCacheDemo
 //
 //  Created by Nikhil Nigade on 4/3/15.
@@ -31,7 +31,7 @@ if([NSThread isMainThread])\
     #endif
 #endif
 
-@interface NSString (DZCategories)
+@interface NSString (DZFICCategories)
 
 - (BOOL)isBlank;
 - (NSString *)stringByStrippingWhitespace;

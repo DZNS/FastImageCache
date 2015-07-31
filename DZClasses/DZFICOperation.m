@@ -7,7 +7,7 @@
 //
 
 #import "DZFICOperation.h"
-#import "DZCategories.h"
+#import "DZFICCategories.h"
 
 @interface DZFICOperation ()
 
