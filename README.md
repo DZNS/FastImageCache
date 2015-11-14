@@ -1,5 +1,8 @@
 ![Fast Image Cache Logo](https://s3.amazonaws.com/fast-image-cache/readme-resources/logo.png)
 
+### NOTE
+This fork is no longer maintained. Please see https://github.com/DZNS/DZFICNetworkController
+
 ---
 ### Dezine Zync Additions to the class:
 ````
